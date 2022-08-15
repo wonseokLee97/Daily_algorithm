@@ -1,7 +1,7 @@
 # 🌈 Daily_algorithm
 
 
-### solving problem everyday!
+### Solving problem everyday!
 <br/>
 
 ### 2022.08
