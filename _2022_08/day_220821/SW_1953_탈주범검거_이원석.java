@@ -121,12 +121,9 @@ public class SW_1953_탈주범검거_이원석 {
                         continue;
                     }
 
-                    // 한번도 방문하지 않은 경로거나, 이미 지니간 경로보다 현재의 경로가 더 짧다면,
+                    // 한번도 방문하지 않은 경로일 때,
                     if (visited[nx][ny] == 0) {
 
-                        visited[nx][ny] = visited[x][y] + 1;
-                        queue.add(new int[]{nx, ny});
-                    } else if (visited[nx][ny] > visited[x][y] + 1) {
                         visited[nx][ny] = visited[x][y] + 1;
                         queue.add(new int[]{nx, ny});
                     }
