@@ -1,4 +1,4 @@
-package com.ssafy._2023_02.day_2023_02_20;
+package com.ssafy._2023_02.day_02_20;
 
 import java.io.BufferedReader;
 import java.io.IOException;
