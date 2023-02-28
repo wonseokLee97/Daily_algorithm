@@ -25,7 +25,6 @@ public class BJ_2003_수들의_합2 {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        Arrays.sort(arr);
 
         System.out.println(two_pointer());
     }
@@ -38,7 +37,6 @@ public class BJ_2003_수들의_합2 {
 
         // 모든 가르키는 인덱스가 끝으로 갈 때까지
         while (s < N) {
-            System.out.println(s + ", " + e);
             // s를 증가시키는 경우.. (부분합이 N보다 큰 경우이거나 end_point 가 끝 점에 도달할 경우)
             if (sum > M || e == N) {
                 sum -= arr[s++];
@@ -46,7 +44,8 @@ public class BJ_2003_수들의_합2 {
                 sum += arr[e++];
             }
 
-            if (sum == N) {
+
+            if (sum == M) {
                 cnt++;
             }
         }
