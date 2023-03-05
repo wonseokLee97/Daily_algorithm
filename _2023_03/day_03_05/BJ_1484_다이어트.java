@@ -16,7 +16,7 @@ public class BJ_1484_다이어트 {
             Math.pow(s, 2) - G
 
             if () {
-
+                ㄴ
             }
 
         }
