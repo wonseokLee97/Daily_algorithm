@@ -3,24 +3,44 @@ package com.ssafy._2023_03.day_03_05;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class BJ_1484_다이어트 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int G = Integer.parseInt(br.readLine());
-        int s = (int) Math.sqrt(G) + 1;
-        int e = 317;
+        long s = 1;
+        long e = 2;
+        List<Long> ans = new ArrayList<>();
 
         while (s < e) {
-            Math.pow(s, 2) - G
+            long ps = s*s;
+            long pe = e*e;
 
-            if () {
-                ㄴ
+            if (pe - ps == G) {
+                ans.add(e);
             }
 
+            // 차이가 G보다 클 경우..
+            if (pe - ps > G) {
+                s++;
+            } else {
+                e++;
+            }
         }
 
+
+        if (ans.size() == 0) {
+            System.out.println(-1);
+        } else {
+            Collections.sort(ans);
+            for (Integer an : ans) {
+                System.out.println(an);
+            }
+        }
     }
 }
 
