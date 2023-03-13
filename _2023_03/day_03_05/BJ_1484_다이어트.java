@@ -37,7 +37,7 @@ public class BJ_1484_다이어트 {
             System.out.println(-1);
         } else {
             Collections.sort(ans);
-            for (Integer an : ans) {
+            for (Long an : ans) {
                 System.out.println(an);
             }
         }
