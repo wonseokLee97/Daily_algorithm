@@ -16,12 +16,16 @@ public class BJ_14925_목장_건설하기 {
         int M = Integer.parseInt(st.nextToken());
         int N = Integer.parseInt(st.nextToken());
 
-        arr = new int[N][M];
+        arr = new int[N + 1][M + 1];
 
-        for (int i = 0; i < N; i++) {
+        for (int i = 1; i < N; i++) {
             st = new StringTokenizer(br.readLine());
-            for (int j = 0; j < M; j++) {
-                arr[i][j] = Integer.parseInt(st.nextToken());
+            for (int j = 1; j < M; j++) {
+                int o = Integer.parseInt(st.nextToken());
+
+                if (o == 0) {
+                    arr[i][j] = Math.min(Math.min(arr[i - 1][j], arr[i][j - 1]), arr[i - 1][j - 1]) + 1;
+                }
             }
         }
 
