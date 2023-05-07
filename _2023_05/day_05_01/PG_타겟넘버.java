@@ -1,6 +1,4 @@
-package com.ssafy._2023_03.day_05_01;
-
-import java.util.Arrays;
+package com.ssafy._2023_05.day_05_01;
 
 public class PG_타겟넘버 {
     public static void main(String[] args) {
