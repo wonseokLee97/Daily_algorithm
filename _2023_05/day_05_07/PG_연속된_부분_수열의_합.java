@@ -7,7 +7,9 @@ class PG_연속된_부분_수열의_합 {
     public static void main(String[] args) {
         Solution s = new Solution();
 
-        s.solution(new int[]{2, 2, 2, 2, 2}, 6);
+        System.out.println(
+                Arrays.toString(s.solution(new int[]{3, 4, 5, 6, 7}, 5))
+        );
     }
 
 }
@@ -22,35 +24,59 @@ class Solution {
         int[] answer = {};
 
         int s = 0;
-        int e = 0;
+        int e = -1;
         int result = 0;
-        int len = Integer.MAX_VALUE;
 
-        answer = new int[]{0, 0};
+        answer = new int[]{-1, -1};
 
-        while (s < e && e <= sequence.length) {
-            if (s == e) {
-                result = sequence[s];
+        // 1. s, e는 모두 0 부터 시작한다.
+        // 2. s부터 e까지의 합이 k 보다 작은 경우, e를 증가시킨다.
+        // 3. s부터 e까지의 합이 k 보다 큰 경우, s를 증가시키고 이전 s를 빼준다.
+        // 4. s부터 e까지의 합이 k 인 경우, 정답을 저장한다.
+        // 4-1. s부터 e까지의 길이가 이전 정답과 동일할 경우, 갱신 x
+        // 4-2. s부터 e까지의 길이가 이전 정답보다 작을경우, 갱신 o
+
+        while (true) {
+            // 2. s부터 e까지의 합이 k 보다 작은 경우, e를 증가시킨다.
+            if (result < k) {
+                if ((e + 1) < sequence.length) {
+                    result += sequence[++e];
+                } else {
+                    break;
+                }
+            }
+            // 3. s부터 e까지의 합이 k 보다 큰 경우, s를 증가시키고 이전 s를 빼준다.
+            else {
+                result -= sequence[s++];
             }
 
-            // 누적합이 k인 경우
             if (result == k) {
-                // 이전 정답의 길이보다 현재 인덱스간의 길이가 짧을경우,
-                if (len > e - s + 1) {
-                    len = e - s + 1;
+                if (e - s < answer[1] - answer[0]
+                        || answer[1] == -1) {
                     answer[0] = s;
                     answer[1] = e;
                 }
             }
 
-            // 정답이 된 시작 인덱스를 빼주고
-            result -= sequence[s];
-
-            if (e + 1 < )
-
-
+            System.out.println(s + ", " + e + ", " + result);
         }
 
         return answer;
     }
 }
+
+
+//0, 1, 1
+//0, 2, 2
+//0, 3, 3
+//0, 4, 5
+//1, 4, 4
+//1, 5, 7
+//2, 5, 6
+//3, 5, 5
+//4, 5, 3
+//4, 6, 7
+//5, 6, 4
+//5, 7, 9
+//6, 7, 5
+//7, 7, 0
