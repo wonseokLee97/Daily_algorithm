@@ -75,6 +75,9 @@ public class BJ_2211_네트워크복구 {
             }
         }
 
+        // 핵심:
+        // 시작 정점을 제외한 각 노드로 부터 시작 정점까지 출발-도착 간선들을 모두 구하자!!
+        // 단, 중복을 피해서
         System.out.println(map.keySet().size());
         for (Integer k : map.keySet()) {
             System.out.println(k + " " + map.get(k));
