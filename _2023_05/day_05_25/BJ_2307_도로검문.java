@@ -59,34 +59,23 @@ public class BJ_2307_도로검문 {
 
         max_delay = Integer.MIN_VALUE;
 
-        // 6 - 3 - 2 - 1
+        // 6 - 3 - 2 - 1 - 0
         for (int i = N; i != route[i]; i = route[i]) {
+//            System.out.println(i);
             dijikstra(i, route[i]);
             max_delay = Math.max(max_delay, Math.abs(min_val - dist[N]));
         }
 
-//        for (int i = 1; i < graph.size(); i++) {
-//            List<Node> nodes = graph.get(i);
-//
-//            // 모든 정점의 연결관계를 확인하여 검문소로 적용해보고 최소시간을 구한다.
-//            for (Node node : nodes) {
-//                int p_end = node.idx;
-//
-//                if (route[i] != 0) {
-//                    dijikstra(i, p_end);
-//                }
-//
-//                max_delay = Math.max(max_delay, Math.abs(min_val - dist[N]));
-//            }
-//        }
 
-//        System.out.println(max_delay + ", " + Integer.MAX_VALUE);
-        if (max_delay == Integer.MAX_VALUE) {
+        if (max_delay >= Integer.MAX_VALUE / 2) {
             System.out.println(-1);
         } else {
             System.out.println(max_delay);
         }
     }
+
+    // 최단 경로를 구하자! 그 후..
+
     // 도로를 막는 경우
     // 1-2, 1-4
     // 2-3
@@ -98,18 +87,16 @@ public class BJ_2307_도로검문 {
 
     public static void dijikstra(int p_start, int p_end) {
 
-        System.out.println(p_start + ", " + p_end);
-
         for (int i = 0; i < dist.length; i++) {
             dist[i] = Integer.MAX_VALUE;
         }
         dist[1] = 0;
 
-        Deque<Node> queue = new LinkedList<>();
+        PriorityQueue<Node> queue = new PriorityQueue<>();
         queue.add(new Node(1, 0));
 
         while (queue.size() != 0) {
-            Node now_node = queue.pollFirst();
+            Node now_node = queue.poll();
             // 현재 정점과 연결된 다른 정점들
             List<Node> nodes = graph.get(now_node.idx);
 
@@ -124,8 +111,11 @@ public class BJ_2307_도로검문 {
                         route[next_node.idx] = now_node.idx;
                     }
 
-                    if (now_node.idx == p_start && next_node.idx == p_end &&
-                            now_node.idx == p_end && next_node.idx == p_start &&
+                    // System.out.println(now_node.idx + ", " + next_node.idx);
+                    // System.out.println(p_start + ", " + p_end);
+
+                    if (((now_node.idx == p_start && next_node.idx == p_end) ||
+                            (now_node.idx == p_end && next_node.idx == p_start)) &&
                             p_start != 0 && p_end != 0) {
                         continue;
                     }
@@ -136,7 +126,7 @@ public class BJ_2307_도로검문 {
             }
         }
 
-        System.out.println(Arrays.toString(route));
-        System.out.println(Arrays.toString(dist));
+        // System.out.println(Arrays.toString(route));
+        // System.out.println(Arrays.toString(dist));
     }
 }
