@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="Daily_2023_03_05">
+    <list default="true" id="a240ea26-19df-4020-9136-f614ee4a6d90" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,9 +25,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2Mb4FS2TeVSkEDboQ7qiuVBIYIm" />
+  <component name="ProjectId" id="2M02HMAamKkbo3MIOvX6IgchCDS" />
   <component name="ProjectViewState">
-    <option name="showExcludedFiles" value="false" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -35,21 +34,22 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/wonseok/Desktop/SSAFY/Daily_algorithm&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/multicampus/Desktop/특화PJT/subpjt2/S08P22C104&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_1260_DFS와_BFS">
-    <configuration name="BJ_1260_DFS와_BFS" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_28.BJ_1260_DFS와_BFS" />
+  <component name="RunManager" selected="Application.PG_단속카메라">
+    <configuration name="BJ_1504_특정한_최단경로" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_23.BJ_1504_특정한_최단경로" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_05.day_05_28.*" />
+          <option name="PATTERN" value="com.ssafy._2023_05.day_05_23.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -57,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PG_타겟넘버" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_03.day_05_01.PG_타겟넘버" />
+    <configuration name="BJ_16472_고냥이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_03.day_03_13.BJ_16472_고냥이" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_03.day_05_01.*" />
+          <option name="PATTERN" value="com.ssafy._2023_03.day_03_13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PG_양궁대회" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_15.PG_양궁대회" />
+    <configuration name="BJ_18352_특정_거리의도시_찾기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_25.BJ_18352_특정_거리의도시_찾기" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_05.day_05_15.*" />
+          <option name="PATTERN" value="com.ssafy._2023_05.day_05_25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +83,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PG_네트워크" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_03.day_05_01.PG_네트워크" />
+    <configuration name="BJ_2307_도로검문" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_25.BJ_2307_도로검문" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_03.day_05_01.*" />
+          <option name="PATTERN" value="com.ssafy._2023_05.day_05_25.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,25 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PG_두큐합_같게_만들기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_10.PG_두큐합_같게_만들기" />
+    <configuration name="PG_단속카메라" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_30.PG_단속카메라" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_05.day_05_10.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PG_연속된_부분_수열의_합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_05.day_05_07.PG_연속된_부분_수열의_합" />
-      <module name="Daily_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_05.day_05_07.*" />
+          <option name="PATTERN" value="com.ssafy._2023_05.day_05_30.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,64 +111,38 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BJ_1260_DFS와_BFS" />
-        <item itemvalue="Application.PG_양궁대회" />
-        <item itemvalue="Application.PG_두큐합_같게_만들기" />
-        <item itemvalue="Application.PG_연속된_부분_수열의_합" />
-        <item itemvalue="Application.PG_타겟넘버" />
+        <item itemvalue="Application.PG_단속카메라" />
+        <item itemvalue="Application.BJ_2307_도로검문" />
+        <item itemvalue="Application.BJ_18352_특정_거리의도시_찾기" />
+        <item itemvalue="Application.BJ_1504_특정한_최단경로" />
+        <item itemvalue="Application.BJ_16472_고냥이" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="" />
-      <created>1678022846666</created>
+      <changelist id="a240ea26-19df-4020-9136-f614ee4a6d90" name="Changes" comment="" />
+      <created>1676890090628</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1678022846666</updated>
-      <workItem from="1678022858316" duration="5614000" />
-      <workItem from="1678713852105" duration="9252000" />
-      <workItem from="1681302344228" duration="596000" />
-      <workItem from="1681308457280" duration="90000" />
-      <workItem from="1681308603089" duration="589000" />
-      <workItem from="1681731596109" duration="17782000" />
-      <workItem from="1683459844820" duration="21283000" />
-      <workItem from="1683806535121" duration="2504000" />
-      <workItem from="1684156616029" duration="10246000" />
+      <updated>1676890090628</updated>
+      <workItem from="1676890091891" duration="7333000" />
+      <workItem from="1677215086582" duration="7353000" />
+      <workItem from="1677485997853" duration="16088000" />
+      <workItem from="1677720926755" duration="7000" />
+      <workItem from="1677731814940" duration="6160000" />
+      <workItem from="1677803230320" duration="23791000" />
+      <workItem from="1678408240939" duration="4685000" />
+      <workItem from="1678752652860" duration="5755000" />
+      <workItem from="1682662070451" duration="1900000" />
+      <workItem from="1682902697478" duration="22000" />
+      <workItem from="1684811665324" duration="3278000" />
+      <workItem from="1684976773924" duration="30424000" />
     </task>
-    <task id="LOCAL-00001" summary="Daily_2023_03_05">
-      <created>1678024512682</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1678024512682</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="false" />
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Daily_2023_03_05" />
-    <option name="LAST_COMMIT_MESSAGE" value="Daily_2023_03_05" />
   </component>
 </project>
