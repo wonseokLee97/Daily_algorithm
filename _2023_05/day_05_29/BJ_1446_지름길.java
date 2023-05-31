@@ -4,31 +4,35 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.Buffer;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.PriorityQueue;
-import java.util.StringTokenizer;
+import java.util.*;
 
 public class BJ_1446_지름길 {
 
     static class Node implements Comparable<Node> {
-        int idx;
+        int start_idx;
         int dist;
 
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "start_idx=" + start_idx +
+                    ", dist=" + dist +
+                    '}';
+        }
+
         public Node(int idx, int dist) {
-            this.idx = idx;
+            this.start_idx = idx;
             this.dist = dist;
         }
 
         @Override
         public int compareTo(Node o) {
-            return Integer.compare(this.dist, o.dist);
+            return Integer.compare(this.start_idx, o.start_idx);
         }
     }
 
     static int N, D, dist[];
-//    static List<List<Node>> graph;
-    static List<Node>[] graph;
+    static List<Node>[] list;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -38,11 +42,10 @@ public class BJ_1446_지름길 {
         N = Integer.parseInt(st.nextToken());
         D = Integer.parseInt(st.nextToken());
 
-        graph = new ArrayList[151];
-        dist = new int[151];
+        list = new List[10001];
 
-        for (int i = 0; i < N; i++) {
-            graph[i] = new ArrayList<>();
+        for (int i = 0; i < 10001; i++) {
+            list[i] = new ArrayList<>();
         }
 
         for (int i = 0; i < N; i++) {
@@ -52,41 +55,46 @@ public class BJ_1446_지름길 {
             int e = Integer.parseInt(st.nextToken());
             int l = Integer.parseInt(st.nextToken());
 
-            dist[s] = s - 0;
-
-            graph[0].add(new Node(s, s));
-            graph[s].add(new Node(e, l));
-        }
-
-        dijikstra();
-    }
-
-    public static void dijikstra() {
-
-        for (int i = 0; i < 10001; i++) {
-            if (dist[i] != 0) {
-                dist[i] = Integer.MAX_VALUE;
+            // 역주행 불가, 지름길이 아닌 경우..
+            if (e > D || e - s <= l) {
+                continue;
             }
+
+            list[e].add(new Node(s, l));
         }
 
-        PriorityQueue<Node> pq = new PriorityQueue<>();
+        dist = new int[10001];
+        Arrays.fill(dist, Integer.MAX_VALUE);
 
-        pq.add(new Node(0, 0));
+        dist[0] = 0;
 
-        while (!pq.isEmpty()) {
-            Node now_node = pq.poll();
-            List<Node> nodes = graph[now_node.idx];
 
-            for (Node next_node : nodes) {
-                int cost = next_node.dist + now_node.dist;
+        // 한줄정리
+        // 시작점을 기준으로 정렬한다. (그래야 도달순으로 최단 경로를 구함)
+        // 도착하는 지점 i를 기준으로, 만약 해당 위치까지의 도달 지름길이 더 먼 경우는 continue
+        // 도착하는 지점 i를 기준으로
+        // 이전 지점에서 + 1 거리와,
+        // (i를 도착지점으로 하는 지름길의 시작점의 최소 거리) + (지름길의 거리)
+        // 중에서 더 최소 경로를 dist 배열에 저장한다.
 
-                if (cost < dist[next_node.idx]) {
-                    dist[next_node.idx] = cost;
-                    pq.add(new Node(next_node.idx, cost));
+
+        // 도착 지점까지..
+        for (int i = 1; i < D + 1; i++) {
+            // i에 도착하는 방법들 (Node)중..
+            for (Node node : list[i]) {
+                // 시작 시점까지의 거리 + 끝 지점 까지의 거리
+                // 가 이미 갱신되었다면 (Integer.MAX_VALUE 가 아니거나, 지름길이 더 먼 경우)
+                if (dist[node.start_idx] + node.dist > dist[i]){
+                    continue;
                 }
+                dist[i] = Math.min(dist[i - 1] + 1, dist[node.start_idx] + node.dist);
+            }
+
+            if (list[i].size() == 0) {
+                dist[i] = dist[i - 1] + 1;
             }
         }
 
-        System.out.println(dist[150]);
+        System.out.println(dist[D]);
     }
 }
