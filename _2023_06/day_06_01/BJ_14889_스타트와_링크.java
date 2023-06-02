@@ -1,4 +1,4 @@
-package com.ssafy._2023_06;
+package com.ssafy._2023_06.day_06_01;
 
 import java.util.*;
 import java.lang.*;
