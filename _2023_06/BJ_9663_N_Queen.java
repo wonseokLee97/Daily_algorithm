@@ -37,7 +37,7 @@ public class BJ_9663_N_Queen {
             }
         }
     }
-
+//
     private static boolean canDo(int col) {
 
         // 내가 (col, arr[col]) 에 둔 퀸의 좌표에서
