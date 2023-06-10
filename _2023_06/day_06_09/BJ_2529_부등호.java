@@ -74,6 +74,7 @@ public class BJ_2529_부등호 {
                     continue;
                 }
             }
+
             perm(cnt + 1);
             visited[i] = 0;
             list.remove(cnt);
