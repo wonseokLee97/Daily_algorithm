@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 public class BJ_2110_공유기설치 {
 
-    static int arr[], N, C, answer;
+    static int arr[], N, C, answer, start, end;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -28,7 +28,7 @@ public class BJ_2110_공유기설치 {
         Arrays.sort(arr);
 //        System.out.println(Arrays.toString(arr));
         bs();
-        System.out.println(answer);
+        System.out.println(answer - 1);
     }
 
     public static void bs() {
@@ -41,7 +41,6 @@ public class BJ_2110_공유기설치 {
         while (start < end) {
             // 최소 거리
             mid = (start + end) / 2;
-
 
             // 공유기를 설치할 수 있는 개수
             int cnt = 1;
@@ -58,14 +57,17 @@ public class BJ_2110_공유기설치 {
 //            System.out.println();
 //            System.out.println("cnt: "  + cnt + ", mid: " + mid);
 
-            // 공유기를 C개 미만으로 설치한 경우 mid(최대거리)를 늘려야함.
+            // 공유기를 C개 미만으로 설치한 경우 mid(최대거리)를 줄여야 함.
+            // 그래야지 공유기 더 많이 설치함 ㅋㅋ
             if (cnt < C) {
                 end = mid;
             } else { // mid 를 줄여야 함, start 를 줄이자.
                 start = mid + 1;
-                answer = mid;
+//                answer = mid;
             }
         }
+
+        answer = (start + end) / 2;
     }
 }
 
