@@ -32,7 +32,7 @@ public class Main {
                 // 수용 가능한 무게일 경우..
                 if (j >= W) {
                     // 이전 물건을 담은 경우와, 해당 물건을 수용하기 전 가치와 해당 물건의 가치의 합 중 더 큰 것을 가져간다.
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - W] + V)
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - W] + V);
                 } else {
                     dp[i][j] = dp[i - 1][j];
                 }
