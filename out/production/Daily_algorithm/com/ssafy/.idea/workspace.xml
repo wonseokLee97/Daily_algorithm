@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="Daily_2023_03_05">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="Daily_2023_03_05" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +41,20 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_10986_나머지합">
+  <component name="RunManager" selected="Application.BJ_13549_숨바꼭질3">
+    <configuration name="BJ_1005_ACM_Craft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_15.BJ_1005_ACM_Craft" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy._2023_06.day_06_15.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BJ_10986_나머지합" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_14.BJ_10986_나머지합" />
       <module name="Daily_algorithm" />
@@ -57,34 +68,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BJ_13549_숨바꼭질3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_21.BJ_13549_숨바꼭질3" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy._2023_06.day_06_21.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BJ_1654_랜선자르기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_12.BJ_1654_랜선자르기" />
-      <module name="Daily_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_06.day_06_12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_1992_쿼드트리" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_13.BJ_1992_쿼드트리" />
-      <module name="Daily_algorithm" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_06.day_06_13.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BJ_2110_공유기설치" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_12.BJ_2110_공유기설치" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
@@ -111,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_13549_숨바꼭질3" />
+        <item itemvalue="Application.BJ_1005_ACM_Craft" />
         <item itemvalue="Application.BJ_10986_나머지합" />
         <item itemvalue="Application.BJ_5904_Moo게임" />
         <item itemvalue="Application.BJ_1654_랜선자르기" />
-        <item itemvalue="Application.BJ_1992_쿼드트리" />
-        <item itemvalue="Application.BJ_2110_공유기설치" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +136,7 @@
       <workItem from="1684156616029" duration="23326000" />
       <workItem from="1685711509097" duration="22171000" />
       <workItem from="1686400803001" duration="872000" />
-      <workItem from="1686487223555" duration="24835000" />
+      <workItem from="1686487223555" duration="42219000" />
     </task>
     <task id="LOCAL-00001" summary="Daily_2023_03_05">
       <created>1678024512682</created>
