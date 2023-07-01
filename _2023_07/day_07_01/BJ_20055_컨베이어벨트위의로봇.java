@@ -45,52 +45,12 @@ public class BJ_20055_컨베이어벨트위의로봇 {
             }
         }
 
-
-//
-//        for (int i = 0; i < 3; i++) {
-//            System.out.println(Arrays.toString(arr[i]));
-//        }
-
-        for (int i = 0; i < 3; i++) {
-            System.out.println(Arrays.toString(arr[i]));
-        }
-
-        System.out.println();
-
         while (K > 0) {
             cnt++;
-            System.out.println(cnt);
-            System.out.println("K: " + K);
-            System.out.println("Robots: " + list.size());
-
-            System.out.println("== rotate ==");
             rotate();
-
-            for (int i = 0; i < 3; i++) {
-                System.out.println(Arrays.toString(arr[i]));
-            }
-
-            System.out.println();
-
-            System.out.println("== move ==");
             move(1);
-
-            for (int i = 0; i < 3; i++) {
-                System.out.println(Arrays.toString(arr[i]));
-            }
-
-            System.out.println();
-
-            System.out.println("== robot ==");
             robot();
-
-            for (int i = 0; i < 3; i++) {
-                System.out.println(Arrays.toString(arr[i]));
-            }
-
-            System.out.println();
         }
-
         System.out.println(cnt);
     }
 
@@ -135,10 +95,10 @@ public class BJ_20055_컨베이어벨트위의로봇 {
                 }
             }
 
-            System.out.println(del.size());
 
             for (int i = 0; i < del.size(); i++) {
-                list.remove(del.get(i));
+                int idx = del.get(i);
+                list.remove(idx);
             }
         }
         // 로봇 스스로 움직임
@@ -146,8 +106,6 @@ public class BJ_20055_컨베이어벨트위의로봇 {
             for (int i = 0; i < list.size(); i++) {
                 int flag = 0;
                 Robot r = list.get(i);
-
-                System.out.println(r.y);
 
                 // 다음 지점이 이동가능한 곳이라면?
                 if (arr[1][r.y + 1] >= 1) {
@@ -159,7 +117,6 @@ public class BJ_20055_컨베이어벨트위의로봇 {
                         Robot next_robot = list.get(j);
 
                         if (next_robot.y == r.y + 1) {
-                            System.out.println(r.y + " 에서 " + next_robot.y + " 로 움직이려는데 로봇이 있어서 안됨!");
                             flag = 1;
                         }
                     }
@@ -179,16 +136,14 @@ public class BJ_20055_컨베이어벨트위의로봇 {
 
                     arr[1][r.y]--;
                     if (arr[1][r.y] == 0) {
-                        System.out.println("0!");
                         K--;
                     }
                 }
             }
 
-            System.out.println(del.size());
-
             for (int i = 0; i < del.size(); i++) {
-                list.remove(del.get(i));
+                int idx = del.get(i);
+                list.remove(idx);
             }
         }
     }
@@ -200,7 +155,6 @@ public class BJ_20055_컨베이어벨트위의로봇 {
             arr[1][1]--;
 
             if (arr[1][1] == 0) {
-                System.out.println("0!");
                 K--;
             }
         }
