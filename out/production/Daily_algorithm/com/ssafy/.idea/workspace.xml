@@ -41,13 +41,13 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.BJ_1300_K번째수">
-    <configuration name="BJ_1005_ACM_Craft" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_15.BJ_1005_ACM_Craft" />
+  <component name="RunManager" selected="Application.BJ_1009_분산처리">
+    <configuration name="BJ_1009_분산처리" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_28.BJ_1009_분산처리" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_06.day_06_15.*" />
+          <option name="PATTERN" value="com.ssafy._2023_06.day_06_28.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_1009_분산처리" />
         <item itemvalue="Application.BJ_1300_K번째수" />
         <item itemvalue="Application.BJ_2436_공약수" />
         <item itemvalue="Application.BJ_1072_게임" />
         <item itemvalue="Application.BJ_13549_숨바꼭질3" />
-        <item itemvalue="Application.BJ_1005_ACM_Craft" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +136,8 @@
       <workItem from="1684156616029" duration="23326000" />
       <workItem from="1685711509097" duration="22171000" />
       <workItem from="1686400803001" duration="872000" />
-      <workItem from="1686487223555" duration="56602000" />
+      <workItem from="1686487223555" duration="58861000" />
+      <workItem from="1687955386975" duration="1533000" />
     </task>
     <task id="LOCAL-00001" summary="Daily_2023_03_05">
       <created>1678024512682</created>
