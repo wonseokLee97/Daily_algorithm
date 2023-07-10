@@ -24,8 +24,8 @@ public class po3 {
 //        Arrays.sort(merchantNames);
 
         for (String merchantName : merchantNames) {
-            System.out.println(merchantName);
-            System.out.println(merchantName.length());
+            String[] s = merchantName.split(" ");
+            System.out.println(Arrays.toString(s));
         }
 
         String get = "";
@@ -33,12 +33,11 @@ public class po3 {
 
 
         for (String merchantName : merchantNames) {
-            String[] s = merchantName.split(" ");
 
-            for (String s1 : s) {
-                if (map.get(s1) == null) {
-                    map.put(s1, 1);
-                }
+            if (merchantName.contains(" ")) {
+                String[] s = merchantName.split(" ");
+            } else {
+
             }
 
             if (merchantName.length() > max_len) {
@@ -58,7 +57,7 @@ public class po3 {
             }
         }
 
-        System.out.println(list.toString());
+//        System.out.println(list.toString());
 
     }
 }
