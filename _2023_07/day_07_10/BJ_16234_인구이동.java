@@ -89,6 +89,5 @@ public class BJ_16234_인구이동 {
                 arr[target[0]][target[1]] = sum / list.size();
             }
         }
-
     }
 }
