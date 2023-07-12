@@ -1,9 +1,15 @@
 package com.ssafy._2023_07.day_07_10;
 
+<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
+=======
+import java.util.*;
+import java.io.*;
+
+>>>>>>> 61691a4ab72f3b0064273a1c7d3da65db8377b90
 
 public class BJ_16234_인구이동 {
 
@@ -89,6 +95,7 @@ public class BJ_16234_인구이동 {
             for (int[] target : list) {
                 arr[target[0]][target[1]] = sum / list.size();
             }
+<<<<<<< HEAD
 
 
 //            System.out.println("===========");
@@ -100,3 +107,8 @@ public class BJ_16234_인구이동 {
         }
     }
 }
+=======
+        }
+    }
+}
+>>>>>>> 61691a4ab72f3b0064273a1c7d3da65db8377b90
