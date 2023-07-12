@@ -1,9 +1,7 @@
 package com.ssafy.toss;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+
 
 public class po3 {
 
@@ -12,53 +10,137 @@ public class po3 {
 
     public static void main(String[] args) {
         merchantNames = new String[]{
-                "비바리퍼블리", "토스커피사일로 베이커리", "비바리퍼블리카 식당", "토스커피사일", "토스커피사일로 베이커", "비바리퍼블리카식", "토스커피사일로 베이", "토스커피사일로&베이커리", "토스커피사일로.베이커리"
-//                "토스커피사일로 베이커리", "토스커피사일", "토스커피사일로 베이커", "토스커피사일로 베이", "토스커피사일로&베이커리"
+//                "비바리퍼블리", "토스커피사일로 베이커리", "비바리퍼블리카 식당", "토스커피사일", "토스커피사일로 베이커", "비바리퍼블리카식", "토스커피사일로 베이", "토스커피사일로.베이커리", "토스커피사일로&베이커리"
+                "토스커피사일로 베이커리", "토스커피사일", "토스커피사일로 베이커", "토스커피사일로 베이", "토스커피사일로&베이커리"
         };
 
-        int max_len = Integer.MIN_VALUE;
-        max_idx = Integer.MIN_VALUE;
 
+        String[] symbol = new String[]{"&", "(", ")", "-", "."};
         HashMap<String, Integer> map = new HashMap<>();
 
-//        Arrays.sort(merchantNames);
-
-        for (String merchantName : merchantNames) {
-            System.out.println(merchantName);
-            System.out.println(merchantName.length());
-        }
-
-        String get = "";
-        List<String> list = new ArrayList<>();
+        String[] merchantNamesClone = merchantNames.clone();
+        Arrays.sort(merchantNamesClone, (String s1, String s2) -> s2.length() - s1.length());
 
 
-        for (String merchantName : merchantNames) {
-            String[] s = merchantName.split(" ");
 
-            for (String s1 : s) {
-                if (map.get(s1) == null) {
-                    map.put(s1, 1);
+        for (int i = 0; i < merchantNamesClone.length; i++) {
+            int flag = 0;
+
+            String[] split = null;
+
+            if (merchantNamesClone[i].contains(" ")) {
+                split = merchantNamesClone[i].split(" ");
+                for (String key : map.keySet()) {
+                    if (key.contains(split[0])) {
+                        flag = 1;
+                        break;
+                    }
+                }
+            } else {
+                int find = 0;
+
+                for (String s : symbol) {
+                    if (merchantNamesClone[i].contains(s)) {
+                        find = 1;
+
+                        if (s.equals(".")) {
+                            split = merchantNamesClone[i].split("\\.");
+                        } else {
+                            split = merchantNamesClone[i].split(s);
+                        }
+
+                        for (String key : map.keySet()) {
+                            if (key.contains(split[0])) {
+                                flag = 1;
+                                break;
+                            }
+                        }
+                    }
+                }
+
+                // 특수기호 및 공백이 없는 문자.
+                if (find == 0) {
+                    for (String key : map.keySet()) {
+                        if (key.contains(merchantNamesClone[i])) {
+                            flag = 1;
+                            break;
+                        } else if (merchantNamesClone[i].contains(key)) {
+                            if (map.get(key) > merchantNamesClone[i].length()) {
+                                flag = 1;
+                                break;
+                            }
+                        }
+                    }
                 }
             }
 
-            if (merchantName.length() > max_len) {
-                max_len = merchantName.length();
-                list.add(merchantName);
-            } else if (merchantName.length() >= max_len) {
-                if (merchantName.contains("&") || merchantName.contains("(") || merchantName.contains(")") || merchantName.contains(".") || merchantName.contains(",") || merchantName.contains("-")) {
-                    max_len = merchantName.length();
-                    list.remove(merchantName.replace("&", " "));
-                    list.remove(merchantName.replace("(", " "));
-                    list.remove(merchantName.replace(")", " "));
-                    list.remove(merchantName.replace(".", " "));
-                    list.remove(merchantName.replace("-", " "));
+            if (flag == 0) {
+//                System.out.println(split[0] + ", " + i + " 번째 " + merchantNamesClone[i]);
+                map.put(split[0], merchantNamesClone[i].length());
+            }
+        }
 
-                    list.add(merchantName);
+
+
+        HashMap<String, Integer> ans = new HashMap<>();
+
+        for (String key : map.keySet()) {
+            for (int i = 0; i < merchantNames.length; i++) {
+                // key 의 길이와 같고, key 를 포함하고 있는 점포
+                if (map.get(key) == merchantNames[i].length() && merchantNames[i].contains(key)) {
+                    // 아직 정답에 저장이 되지 않았다면
+                    if (ans.get(key) == null) {
+                        // 특수기호를 포함한 정답이 없다면
+                        if (ans.get(key + "@") == null) {
+                            int flag = 0;
+
+                            for (String s : symbol) {
+                                if (merchantNames[i].contains(s)) {
+                                    flag = 1;
+                                    break;
+                                }
+                            }
+
+                            // 만약 특수기호를 포함했다면
+                            if (flag == 1) {
+                                ans.put(key + "@", i);
+                            } else {
+                                ans.put(key, i);
+                            }
+                        }
+
+                    }
+                    // 정답이 이미있는 경우
+                    else if (ans.get(key) != null) {
+                        int flag = 0;
+
+                        for (String s : symbol) {
+                            if (merchantNames[i].contains(s)) {
+                                flag = 1;
+                                break;
+                            }
+                        }
+
+                        // 만약 특수기호를 포함했다면
+                        if (flag == 1) {
+                            ans.remove(key);
+                            ans.put(key + "@", i);
+                        } else {
+                            ans.put(key, i);
+                        }
+                    }
                 }
             }
         }
 
-        System.out.println(list.toString());
+        String[] answer = new String[ans.keySet().size()];
 
+        int idx = 0;
+
+        for (String s : ans.keySet()) {
+            answer[idx++] = merchantNames[ans.get(s)];
+        }
+
+        System.out.println(Arrays.toString(answer));
     }
 }
