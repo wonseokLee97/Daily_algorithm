@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="Daily_2023_03_05">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/toss/po3.java" beforeDir="false" afterPath="$PROJECT_DIR$/toss/po3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +43,7 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.po3">
+  <component name="RunManager" selected="Application.BJ_1713_후보추천하기">
     <configuration name="BJ_1009_분산처리" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_28.BJ_1009_분산처리" />
       <module name="Daily_algorithm" />
@@ -58,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_1072_게임" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_22.BJ_1072_게임" />
+    <configuration name="BJ_1300_K번째수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_27.BJ_1300_K번째수" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_06.day_06_22.*" />
+          <option name="PATTERN" value="com.ssafy._2023_06.day_06_27.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -71,12 +70,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_1300_K번째수" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_06.day_06_27.BJ_1300_K번째수" />
+    <configuration name="BJ_1713_후보추천하기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_07.day_07_15.BJ_1713_후보추천하기" />
       <module name="Daily_algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ssafy._2023_06.day_06_27.*" />
+          <option name="PATTERN" value="com.ssafy._2023_07.day_07_15.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BJ_1713_후보추천하기" />
         <item itemvalue="Application.po3" />
         <item itemvalue="Application.BJ_1009_분산처리" />
         <item itemvalue="Application.BJ_1300_K번째수" />
         <item itemvalue="Application.BJ_2436_공약수" />
-        <item itemvalue="Application.BJ_1072_게임" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +139,8 @@
       <workItem from="1685711509097" duration="22171000" />
       <workItem from="1686400803001" duration="872000" />
       <workItem from="1686487223555" duration="58861000" />
-      <workItem from="1687955386975" duration="3996000" />
+      <workItem from="1687955386975" duration="5133000" />
+      <workItem from="1688983935000" duration="2702000" />
     </task>
     <task id="LOCAL-00001" summary="Daily_2023_03_05">
       <created>1678024512682</created>
