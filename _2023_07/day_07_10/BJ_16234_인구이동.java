@@ -1,15 +1,9 @@
 package com.ssafy._2023_07.day_07_10;
 
-<<<<<<< HEAD
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
-=======
-import java.util.*;
-import java.io.*;
-
->>>>>>> 61691a4ab72f3b0064273a1c7d3da65db8377b90
 
 public class BJ_16234_인구이동 {
 
@@ -63,7 +57,7 @@ public class BJ_16234_인구이동 {
         q.add(new int[]{x, y});
         visited[x][y] = 1;
         list = new ArrayList<>();
-        list.add(new int[] {x, y});
+        list.add(new int[]{x, y});
         int sum = arr[x][y];
 
 
@@ -79,7 +73,7 @@ public class BJ_16234_인구이동 {
                     int gap = Math.abs(arr[nx][ny] - arr[poll[0]][poll[1]]);
 
                     if (L <= gap && gap <= R) {
-                        list.add(new int[] {nx, ny});
+                        list.add(new int[]{nx, ny});
                         sum += arr[nx][ny];
                         visited[nx][ny] = 1;
                         q.add(new int[]{nx, ny});
@@ -95,20 +89,6 @@ public class BJ_16234_인구이동 {
             for (int[] target : list) {
                 arr[target[0]][target[1]] = sum / list.size();
             }
-<<<<<<< HEAD
-
-
-//            System.out.println("===========");
-//            System.out.println(sum);
-//            System.out.println();
-//            for (int[] a : arr) {
-//                System.out.println(Arrays.toString(a));
-//            }
         }
     }
 }
-=======
-        }
-    }
-}
->>>>>>> 61691a4ab72f3b0064273a1c7d3da65db8377b90
