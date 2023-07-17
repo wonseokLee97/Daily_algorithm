@@ -1,15 +1,7 @@
 package com.ssafy._2023_07.day_07_10;
 
-<<<<<<< HEAD
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
-=======
 import java.util.*;
 import java.io.*;
->>>>>>> 61691a4ab72f3b0064273a1c7d3da65db8377b90
 
 public class BJ_1138_한줄로서기 {
     static int N, arr[], visited[], nums[], answer[];
@@ -88,8 +80,4 @@ public class BJ_1138_한줄로서기 {
             answer = nums.clone();
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 61691a4ab72f3b0064273a1c7d3da65db8377b90
