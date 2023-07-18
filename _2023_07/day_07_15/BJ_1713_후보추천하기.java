@@ -50,13 +50,6 @@ public class BJ_1713_후보추천하기 {
                     list.add(next);
                 }
             }
-
-//            System.out.println(list.toString());
-//            for (Integer integer : map.keySet()) {
-//                System.out.println("Key: " + integer + ", Value: " + map.get(integer));
-//            }
-//            System.out.println("====");
-//            System.out.println();
         }
 
         Collections.sort(list);
