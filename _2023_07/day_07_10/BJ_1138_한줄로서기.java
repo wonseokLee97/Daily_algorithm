@@ -1,10 +1,7 @@
 package com.ssafy._2023_07.day_07_10;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
-
+import java.io.*;
 
 public class BJ_1138_한줄로서기 {
     static int N, arr[], visited[], nums[], answer[];
