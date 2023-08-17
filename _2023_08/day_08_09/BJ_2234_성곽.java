@@ -14,6 +14,16 @@ public class BJ_2234_성곽 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
+
+        List<Integer> list = new LinkedList<>();
+
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.remove(2);
+
+        System.out.println(list);
+
         arr = new int[]{1, 2, 4, 8};
         visited = new int[4];
         hashMap = new HashMap<>();
