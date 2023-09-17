@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="Daily_2023_03_05">
+      <change beforePath="$PROJECT_DIR$/Trie/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/Trie/Trie.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Mb4FS2TeVSkEDboQ7qiuVBIYIm" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/wonseok/Desktop/SSAFY/Daily_algorithm&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="BJ_1744_수묶기" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_08.day_08_06.BJ_1744_수묶기" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy._2023_08.day_08_06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BJ_19699_소난다" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_08.day_08_06.BJ_19699_소난다" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy._2023_08.day_08_06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BJ_2302_극장좌석" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_08.day_08_06.BJ_2302_극장좌석" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy._2023_08.day_08_06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BJ_5883_아이폰9S" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy._2023_08.BJ_5883_아이폰9S" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy._2023_08.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.ssafy.Trie.Main" />
+      <module name="Daily_algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ssafy.Trie.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.BJ_2302_극장좌석" />
+        <item itemvalue="Application.BJ_5883_아이폰9S" />
+        <item itemvalue="Application.BJ_1744_수묶기" />
+        <item itemvalue="Application.BJ_19699_소난다" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1b702e2c-4949-46e2-a0e4-73762c91968e" name="Changes" comment="" />
+      <created>1678022846666</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678022846666</updated>
+      <workItem from="1678022858316" duration="5614000" />
+      <workItem from="1678713852105" duration="9252000" />
+      <workItem from="1681302344228" duration="596000" />
+      <workItem from="1681308457280" duration="90000" />
+      <workItem from="1681308603089" duration="589000" />
+      <workItem from="1681731596109" duration="17782000" />
+      <workItem from="1683459844820" duration="21283000" />
+      <workItem from="1683806535121" duration="2504000" />
+      <workItem from="1684156616029" duration="23326000" />
+      <workItem from="1685711509097" duration="22171000" />
+      <workItem from="1686400803001" duration="872000" />
+      <workItem from="1686487223555" duration="58861000" />
+      <workItem from="1687955386975" duration="5133000" />
+      <workItem from="1688983935000" duration="14137000" />
+      <workItem from="1690788480199" duration="28302000" />
+      <workItem from="1694331999375" duration="796000" />
+    </task>
+    <task id="LOCAL-00001" summary="Daily_2023_03_05">
+      <created>1678024512682</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1678024512682</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Daily_2023_03_05" />
+    <option name="LAST_COMMIT_MESSAGE" value="Daily_2023_03_05" />
+  </component>
+</project>
